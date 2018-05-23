@@ -4,7 +4,15 @@
   "description": "A middleware wrapper exposing local *coind RPC methods. Should work for most Bitcoin or related Cryptocurrencies.",
   "main": "lib/coind-express.app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test_old": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Manbearpixel/xxl-coind-express-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manbearpixel/xxl-coind-express-api/issues"
   },
   "keywords": [
     "express",
@@ -18,10 +26,13 @@
     "xxl"
   ],
   "author": "Pixxl <@manbearpixel>",
-  "license": "ISC",
+  "license": "BSD 3-Clause",
   "dependencies": {
     "bitcoin": "^1.7.0",
-    "bitcoin-core": "^2.0.0",
-    "express": "^4.16.3"
+    "bitcoin-core": "^2.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
   }
 }
